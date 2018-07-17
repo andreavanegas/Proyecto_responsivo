@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #504040;
+}
+
+nav{
+    position: fixed;
+    width: 100%;  
+    background-color:darkseagreen;
+    text-align: center;
+    font-size: 40px;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+
+}
+
+nav li a{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    padding: 6px;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+nav li a:after{
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border-bottom: solid 2px chocolate;
+    transition: all 1s linear;
+    transform: translateX(100%);
+}
+
+nav li a:hover:after{
+    transform: translateX(0%);
+
+}
+
+div{
+    position: relative;
+    width: 20px;
+    height: 32px;
+
+}
+
+#bar{
+    display: none;
+     height: 50px;
+}
+
+div{
+   width: 100%;
+   background-color: darkseagreen;
+}
+
+section{  
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    z-index: inherit;
+    /* : 2; */
+}
+
+.slider{
+    transform: translate(0);
+}
+
+
+article{
+   background-color: lightslategray;
+}
+
+
+
+@media only screen and (max-width:1200px){
+    nav{
+        transition: all 2s linear; 
+        transform: translate(-100%);
+        width: 100px;
+        height: 92%;
+      
+    }
+
+    #bar{
+        display: block;
+
+    }
+    nav li{
+        display: block;
+    }
+}
+
+img{
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    width: 30%;
+}
+
+
+footer{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    fill-opacity: 20px;
+    width: 100%;
+    height: 20%;
+    top: 90%;
+    bottom: 0px;
+    right: 0px;
+    left: 0%;
+}
+
+h1{
+    background-color: aliceblue;
+    text-align: center;
+    position: relative;
+    display: block;
+
+} 
+
+
+
+@media only screen and (max-width:1200px){
+    /*img{
+        transition: all 2s linear; 
+        transform: translate(-100%);
+        width: 100px;
+        height: 92%;
+      
+    }
+
+    {
+        display: fixed;
+
+    }
+   {
+        display: fixed;
+    }
+}
