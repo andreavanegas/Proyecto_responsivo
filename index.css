@@ -7,12 +7,21 @@ body{
     background-color: #504040;
 }
 
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+
 nav{
     position: fixed;
     width: 100%;  
     background-color:darkseagreen;
     text-align: center;
-    font-size: 40px;
+    font-size: 2px;
 }
 
 nav li{
@@ -48,15 +57,15 @@ nav li a:hover:after{
 }
 
 div{
-    position: relative;
-    width: 20px;
-    height: 32px;
+    position: fixed;
+    width: 30px;
+    height: 30px;
 
 }
 
 #bar{
     display: none;
-     height: 50px;
+     height: 40px;
 }
 
 div{
@@ -64,31 +73,20 @@ div{
    background-color: darkseagreen;
 }
 
-section{  
-    position: absolute;
-    top: 50px;
-    left: 100px;
-    z-index: inherit;
-    /* : 2; */
-}
 
 .slider{
     transform: translate(0);
 }
 
 
-article{
-   background-color: lightslategray;
-}
 
-
-
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:900px){
     nav{
-        transition: all 2s linear; 
+        transition: all 0.5s linear;
         transform: translate(-100%);
-        width: 100px;
-        height: 92%;
+        top: 5%;
+        width: 40%;
+        height: 100%;
       
     }
 
@@ -99,52 +97,91 @@ article{
     nav li{
         display: block;
     }
-}
 
-img{
+
+section{  
     position: relative;
     display: inline-block;
-    margin: 20px;
-    width: 30%;
+    top: 70px;
+    z-index: -1;
 }
 
+img {
+    position: relative;
+    display: block;
+    padding: 12px;
+    margin: 0px auto;
+    height: 50%;
+    width: 47%;
+    top: 15px;
+    bottom: auto;
+}
+
+h1{
+    text-align: center;
+    position: absolute;
+    display: inline-block;
+    font-size: 20px ;
+   }
+
+
+@media only screen and (max-width:200px){
+   section{
+    transition: all 0.5s linear;
+    transform: translate(-20%);
+    width: 357px;
+    height: -15%;
+
+}
+    img{
+        display: block;
+
+    }
+}  
+
+
+
+/*
 
 footer{
-    font-size: 20px;
+    position: absolute;
+    display: inline;
+    font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    fill-opacity: 20px;
     width: 100%;
     height: 20%;
-    top: 90%;
+    top: 150%;
     bottom: 0px;
     right: 0px;
     left: 0%;
 }
 
-h1{
-    background-color: aliceblue;
+h10{
+    background-color:#a3ab94;
     text-align: center;
-    position: relative;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    position: static;
     display: block;
-
 } 
 
 
-
 @media only screen and (max-width:1200px){
-    /*img{
-        transition: all 2s linear; 
-        transform: translate(-100%);
-        width: 100px;
-        height: 92%;
-      
-    }
-
-    {
-        display: fixed;
-
-    }
-   {
-        display: fixed;
-    }
+   footer{
+    transition: all 2s linear;
+    transform: translate(-96%);
+    top: 153%;
+    width: -53px;
+    height: 60%;
+    left: 108%;
 }
+    }
+
+   h10{
+        display: block;
+
+    }
+  
+      */
+      
+      
